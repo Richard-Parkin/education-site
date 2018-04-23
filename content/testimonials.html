@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+		<link href="https://fonts.googleapis.com/css?family=Lato:100|Work+Sans:100" rel="stylesheet">
+		{{ .Hugo.Generator }}
+		<title>{{ .Site.Title }}</title>
+
+		{{ "<!-- Favicon -->" | safeHTML }}
+		{{ partial "css.html" . }}
+	</head>
+	<body >
+		{{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services  .Site.Params.navigation.links.contact }}
+			{{ partial "nav.html" . }}
+		{{ end }}
+    	<div id="transcroller-body" class="aos-all">
+
+			<div class="heading-style" style="background-image: url(/images/networking.jpg);">
+				<div class="title_img" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+					<div class="col-sm-6 col-md-6 col-lg-6"></div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pad-no">
+						<div class="title_holder">
+							<div class="title_text">
+								<div class="title_box">
+									<p>Testimonials</p>
+									<hr class="hr">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="first_breaker">
+				<img src="/images/transition-white.png">
+			</div>
+			<div class="second_section">
+				<div class="col-lg-12 white_space">
+					<div class="col-lg-6 col-lg-offset-3 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 aos-item" >
+						<div class="col-lg-12" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500">
+							<div class="col-lg-12 conbox">
+								<p>We're proud of bringing schools truly excellent service - but we don't think you should just take our word for it. We've put together some testimonials from a few of our customers, showing how Exa services have helped them:</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="/images/end-top-transition2-top.png">
+			</div>
+			<div class="second_section_middle"></div>
+			<div class="second_section_bottom">
+				<img src="/images/end-top-transition2.png">
+			</div>
+			<div>
+			<div class="screen-holder">
+				<div class="screen"></div>
+					<section class="board board_h_voice" style="background-image: url(/images/vote.jpg);">
+						<div class="col-lg-12" style="padding-top: 50px">
+							<div class="col-lg-12">
+								<div class="col-lg-5 col-lg-offset-4 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="fade-left" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1500">
+									<div class="conbox">
+										<p><i class="fas fa-quote-left"></i> The service we receive from Exa Education has allowed our school to work faster and more efficiently than ever before, and has definitely proved beyond all doubt that value for money has been achieved. I would have no hesitation in recommending Exa Education to other schools. <i class="fas fa-quote-right"></i></p>
+										<h4>Laura Kerrison<br>Business Manager<br>Nicholas Hawksmoor Primary School</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="col-lg-5 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="fade-right" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1500">
+									<div class="conbox">
+										<p><i class="fas fa-quote-left"></i> We switched over to Exa in January 2015. The process was seamless and since the move we have been very satisfied with our Broadband which is now much quicker. Prior to the move to Exa we regularly had days when we were without our Broadband and this has not happened once since January. We are delighted that we made the move. <i class="fas fa-quote-right"></i></p>
+										<h4>Tina Allen<br>School Business Manager<br>West Hoathly Primary School</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="col-lg-5 col-lg-offset-4 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="fade-left" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1500">
+									<div class="conbox">
+										<p><i class="fas fa-quote-left"></i> I can unreservedly recommend Exa Education for all your broadband requirements. Their staff are very friendly and helpful, the free web content filtering is super and so easy to use, we have 10Mbps to ourselves and it is half the price we were paying. What more can one ask for? <i class="fas fa-quote-right"></i></p>
+										<h4>Lynne Hinsley<br>ICT Technical/Business Manager<br>St Mary’s Catholic Primary School</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="third_breaker">
+				<img src="/images/end-top-transition3-top.png">
+			</div>
+
+			{{ partial "contact.html" . }}
+			{{ partial "footer.html" . }}
+
+
+			{{ partial "js.html" . }}
+
+			
+		</div>
+	</body>
+
+</html>

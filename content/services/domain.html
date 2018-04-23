@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+		<link href="https://fonts.googleapis.com/css?family=Lato:100|Work+Sans:100" rel="stylesheet">
+		{{ .Hugo.Generator }}
+		<title>{{ .Site.Title }}</title>
+
+		{{ "<!-- Favicon -->" | safeHTML }}
+		{{ partial "css.html" . }}
+	</head>
+	<body >
+		{{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services  .Site.Params.navigation.links.contact }}
+			{{ partial "nav.html" . }}
+		{{ end }}
+    	<div id="transcroller-body" class="aos-all">
+
+			<div class="heading-style" style="background-image: url(/images/https.jpg);">
+				<div class="title_img" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+					<div class="col-sm-6 col-md-6 col-lg-6"></div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pad-no">
+						<div class="title_holder">
+							<div class="title_text">
+								<div class="title_box">
+									<p>Domain</p>
+									<hr class="hr">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="first_breaker">
+				<img src="/images/transition-white.png">
+			</div>
+			<div class="second_section">
+				<div class="col-lg-12 white_space">
+					<div class="col-lg-6 col-lg-offset-3 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 aos-item" >
+						<div class="col-lg-12" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500">
+							<div class="col-lg-12 conbox">
+								<p>Internet security is absolutely vital for schools. Along with our industry-leading <a href="/content-filtering">SurfProtect Quantum content filtering</a>, we offer a number of market-leading security services to keep your school as safe as possible. On this page, we've put together some information about our most popular security products - get in touch at <b>0345 145 1234</b> to find out more about what's available for your school.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="/images/end-top-transition2-top.png">
+			</div>
+			<div class="second_section_middle"></div>
+			<div class="second_section_bottom">
+				<img src="/images/end-top-transition2.png">
+			</div>
+			<div>
+				<div class="screen-holder">
+					<div class="screen"></div>
+					<section class="board board_h_voice" style="background-image: url(/images/reliable.jpg);%">
+						<div class="col-lg-12" style="padding-top: 50px">
+							<div class="col-lg-6 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500" >
+								<div class="conbox">
+									<h4 class="chalk head">Safeguarding Online with NetSupport DNA</h4>
+									<p>NetSupport DNA is an effective tool designed to support your school's online security on an unprecedented level, giving you a truly comprehensive look at how your Internet connection is being used.</p>
+									<p>Unlike many other safeguarding options, NetSupport doesn't just record when a safeguarding policy is triggered, instead taking a full log of how the user in question is behaving online, making it far easier to identify any potential causes for concern in your school.</p>
+									<p>The highly customisable NetSupport panel lets you get even more in-depth with your safeguarding, giving you a number of log formats - save the log itself, screenshots, videos, word clouds or even webcam photos!</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500" >
+								<div class="conbox">
+									<h4 class="chalk head">Real-Time Network Visibility</h4>
+									<p>Uniquely, NetSupport DNA isn't just designed for safeguarding and security. It incorporates a complete asset management suite, letting you see exactly how every device connected to your network is being used.</p>
+									<p>This feature means that NetSupport can be a major advantage when it comes to budgeting, giving you the tools to easily identify potential savings, while a complete remote asset control suite letting you set policies governing exactly how devices on your network function.</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500" >
+								<div class="conbox">
+									<h4 class="chalk head">Advanced New Filtering Features</h4>
+									<p>SurfProtect Quantum incorporates a wide range of effective content filtering features, with a whole lot more set to be implemented in the near future. We've highlighted a couple of key features below - get in touch with our team at 0345 145 1234 to find out more about how SurfProtect Quantum can support your requirements.</p>
+									<p><b>Active Directory Integration</b>: An effective new feature available through SurfProtect Quantum, Active Directory Integration lets you assign bespoke content filtering profiles to individual users, user groups (such as staff and teachers), and individual computers, giving you complete filtering flexibility.</p>
+									<p><b>Complete Site Categorisation</b>: SurfProtect Quantum categorises websites (including HTTPS-encrypted ones) based on their content, letting you build a filtering policy which excludes any kind of content that isn't appropriate for your school.</p>
+									<p><b>Advanced Filter Analytics</b>: With the SurfProtect Quantum analytics suite, you'll get a full view of how your Internet connection has been used, including the sites that have been visited or blocked, along with web searches, while an effective search engine lets you see exactly what's happening.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="third_breaker">
+				<img src="/images/end-top-transition3-top.png">
+			</div>
+
+
+				{{ partial "contact.html" . }}
+				{{ partial "footer.html" . }}
+
+
+
+			{{ partial "js.html" . }}
+
+			
+		</div>
+	</body>
+</html>

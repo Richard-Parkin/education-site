@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+		<link href="https://fonts.googleapis.com/css?family=Lato:100|Work+Sans:100" rel="stylesheet">
+		{{ .Hugo.Generator }}
+		<title>{{ .Site.Title }}</title>
+
+		{{ "<!-- Favicon -->" | safeHTML }}
+
+		{{ partial "css.html" . }}
+		<style type="text/css">
+			#twitter-widget-0 {
+  				width: 100%!important;
+  				height:100%!important;
+			}
+			.letter_title p {
+				font-family: "Lobster", cursive!important;
+				font-size: 3vw!important;
+			}
+		</style>
+	</head>
+	<body >
+		{{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services  .Site.Params.navigation.links.contact }}
+			{{ partial "nav.html" . }}
+		{{ end }}
+    	<div id="transcroller-body" class="aos-all">
+
+			<div class="heading-style" style="background-image: url(/images/ConnectivityHeader.png);">
+				<div class="title_img" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+					<div class="col-sm-6 col-md-6 col-lg-6"></div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pad-no">
+						<div class="title_holder">
+							<div class="title_text">
+								<div class="title_box">
+									<p>About/Contact</p>
+									<hr class="hr">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="first_breaker">
+				<img src="/images/transition.png">
+			</div>
+
+			<div class="cork hidden-sm hidden-xs">
+				<div class="col-lg-12 hidden-sm hidden-xs" style="margin-top: 75px; margin-bottom:50px;">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 aos-item" >
+						<div class="col-lg-12 hidden-sm hidden-xs" id="poster" data-aos="fade-down-left" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine" style="background-image: url(/images/paper.jpg); background-position: left; background-size: cover; box-shadow: -4px 5px 19px #000; margin-bottom: 30px; height: 450px;margin-top:50px/* Standard syntax *">
+							<img src="/images/drawing.png" style="width: 60px" data-aos="fade-down-left" data-aos-once="true" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+							<img src="/images/drawing.png" style="width: 60px" class="pull-right" data-aos-once="true" data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+							<div cass="col-lg-12">
+								<div class="letter_title">
+									<p>Contact Us </p>
+								</div>
+							</div>
+							<div cass="col-lg-12">
+								<p>Whether you've got an inquiry about our services, want to find out more about us, or want to ask anything else, don't hesitate to get in touch with Exa! You can get in touch in the following ways:<br><br>Telephone: <b>0345 145 1234</b><br><br>Fax:<b> 01274 91855</b><br><br>Email: <b>education@exa.net.uk</b><br><br>Support Email: <b>support@exa.net.uk</b></p>
+							</div>
+						</div>
+						<div class="col-lg-12 hidden-sm hidden-xs" id="poster1" data-aos="zoom-out-right"  data-aos-easing="ease-in-sine" data-aos-once="true" style="background-image: url(/images/ext.jpg); background-position: left; background-size: cover; box-shadow: -4px 5px 19px #000; margin-bottom: 30px; height: 250px; /* Standard syntax *">
+							<img src="/images/drawing.png" style="width: 60px" data-aos="fade-down-left" data-aos-once="true" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+							<img src="/images/drawing.png" style="width: 60px" class="pull-right" data-aos-once="true" data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-2 aos-item" id="poster2">
+						<div class="col-lg-12 pad-no" data-aos="zoom-out-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true" style="box-shadow: -4px 5px 19px #000; margin-bottom: 50px;margin-top: 0px;height:530px; z-index:11">
+							<div class="col-lg-12 pad-no">
+								<img src="/images/drawing.png" style="width: 60px;position: absolute;top:0;left:50%;" class="pull-right"  data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500" data-aos-once="true">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.5362225797676!2d-1.749017880964571!3d53.797741506736294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be5b675765743%3A0x4a5cd41a4d38e1e2!2sExa+Networks!5e0!3m2!1sen!2suk!4v1521207843471" width="100%" height="530" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Small Screens -->
+			<div class="cork hidden-md hidden-lg">
+
+				<div class="col-lg-12" style="margin-top: 75px; min-height: 240px;">
+					<div class="col-sm-12" data-aos="zoom-out-right" data-aos-offset="300" data-aos-easing="ease-in-sine" style="background-image: url(/images/leaflet.png); background-size: cover; box-shadow: -4px 5px 19px #000; color:#000; margin-bottom: 15px; height: 285px;">
+						<img src="/images/drawing.png" style="width: 60px" data-aos="fade-down-left"  data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+						<img src="/images/drawing.png" style="width: 60px" class="pull-right"  data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+						<center><h3 style="font-size: 40px"><b>Exa News</b></h3>
+						<p style="font-size: 26px">For Lastest news <a href="https://blog.exa.net.uk/tags/education/" target="_blank">click here</a></p></center>
+					</div>
+				</div>
+				<div class="col-lg-12" style="margin-bottom:50px;">
+
+					<div class="col-sm-6 col-xs-12" data-aos="zoom-out-right" data-aos-offset="300" data-aos-easing="ease-in-sine" style="background-image: url(/images/looking_back.png); background-size: contain; background-repeat: no-repeat; box-shadow: -4px 5px 19px #000; margin-bottom: 10px; min-height:331px; z-index:11; background-color:#000;">
+						<div class="col-sm-6">
+							<img src="/images/drawing.png" style="width: 60px" data-aos="fade-down-left"  data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+							<img src="/images/drawing.png" style="width: 60px" class="pull-right"  data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-delay="500">
+						</div>
+					</div>
+					<div class="col-sm-6  col-xs-12" data-aos="zoom-out-right"  data-aos-easing="ease-in-sine" style="box-shadow: -4px 5px 19px #000;background-image: url(/images/takeaways_bett.png); background-position: left; background-size: contain; background-repeat: no-repeat; height: 298px; margin-bottom: 45px;background-color:#fff;">
+						<img src="/images/drawing.png" style="width: 60px" data-aos="fade-down-left" data-aos-easing="ease-in-sine">
+						<img src="/images/drawing.png" style="width: 60px" class="pull-right" data-aos-delay="400" data-aos="fade-down-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+					</div>
+				</div>
+			</div>
+			<div class="third_breaker">
+				<img src="/images/end-top-transition3-top.png">
+			</div>
+
+				{{ partial "contact.html" . }}
+				{{ partial "footer.html" . }}
+
+
+			{{ partial "js.html" . }}
+			<script type="text/javascript">
+				var randomN = Math.floor(Math.random() * 14) - 7
+				var randomN1 = Math.floor(Math.random() * 14) - 7
+				var randomN2 = Math.floor(Math.random() * 14) - 7
+
+				$('#poster').addClass('rotate' + randomN);
+				$('#poster1').addClass('rotate' + randomN1);
+				$('#poster2').addClass('rotate' + randomN2);
+			</script>
+			
+		</div>
+	</body>
+</html>

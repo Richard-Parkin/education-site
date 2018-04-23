@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://preview.exa.education/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/news/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/additional/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/connectivity/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/content-filtering/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/domain/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/exavoice-voip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/networking/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/security/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/testimonials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/services/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preview.exa.education/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

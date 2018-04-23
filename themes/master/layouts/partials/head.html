@@ -1,0 +1,21 @@
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ .Hugo.Generator }}
+		{{ "<!-- Favicon -->" | safeHTML }}
+		<link href="https://fonts.googleapis.com/css?family=Lato|Lobster|Open+Sans|Caveat|Work+Sans:100" rel="stylesheet">
+		<link rel="shortcut icon" href="{{ .Site.Params.favicon | absURL }}">
+		<link rel="stylesheet" href="{{ "/css/bootstrap.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="{{ "font-awesome/css/font-awesome.min.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="{{ "css/animate.min.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="{{ "css/creative.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="{{ "css/modals.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="{{ "/css/poster.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="{{ "/css/board.css" | absURL }}" type="text/css">
+		<link rel="stylesheet" href="/css/aos.css" type="text/css">
+		<link rel="stylesheet" href="/css/bootstrap-touch-slider.css" type="text/css">
+		<script defer src="/js/fontawesome-all.js"></script>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">

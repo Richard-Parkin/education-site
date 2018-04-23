@@ -1,0 +1,169 @@
+<script src="/js/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+</script>
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "js/jquery.js" | absURL }}"></script>
+{{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+{{ "<!-- Plugin JavaScript -->" | safeHTML }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+<script src="/js/bootstrap-touch-slider.js"></script>
+<script type="text/javascript">
+    $('#bootstrap-touch-slider').bsTouchSlider(
+    $(".carousel").carousel({
+    interval: 6000
+    })
+    );
+</script>
+<script src="{{ "js/jquery.easing.min.js" | absURL }}"></script>
+<script src="{{ "js/jquery.fittext.js" | absURL }}"></script>
+<script src="{{ "js/parallax.js" | absURL }}"></script>
+<script src="{{ "js/wow.min.js" | absURL }}"></script>
+{{ if .Site.Params.location }}
+<script src="//maps.googleapis.com/maps/api/js?key={{ .Site.Params.location.maps_api_key }}&v=3.exp"></script>
+<script src="{{ "js/hpneo.gmaps.js" | absURL }}"></script>
+<script src="{{ "js/gmaps.init.js" | absURL }}"></script>
+{{ end }}
+{{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
+<script src="{{ "js/creative.js" | absURL }}"></script>
+<script src="{{ "js/classie.js" | absURL }}"></script>
+<script src="/js/jquery.scrolldepth.min.js"></script>
+
+<script type="text/javascript">
+	$('ul.nav li.dropdown').hover(function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+</script>
+<script type="text/javascript">
+	function show(unhide, hide, button) {
+		$('.'+button).siblings().removeClass('selected')
+		$('.'+button).addClass('selected')
+		$('.'+hide).fadeOut( "slow", function() {
+		    // Animation complete.
+			$('.'+hide).addClass('hidden');
+		  });
+		$('.'+unhide).fadeIn( "slow", function() {
+		    // Animation complete.
+			$('.'+unhide).removeClass('hidden');
+		  });
+	};
+</script>
+ <script type="text/javascript">
+      $('#nav').affix({
+      offset: {
+        top: $('.test-header').height()
+      }
+});
+
+    </script>
+
+    <script type="text/javascript">
+    	$('.selector').on('mouseover', function() {
+        	$('.list').removeClass('hidden');
+        	$('.selector').addClass('clicked');
+    	})
+    	$('.selector').on('mouseout', function() {
+        	$('.list').addClass('hidden');
+        	$('.selector').removeClass('clicked');
+    	})
+    	$('.list').on('mouseover', function() {
+        	$('.list').removeClass('hidden');
+    	})
+    	$('.list').on('mouseout', function() {
+        	$('.list').addClass('hidden');
+    	})
+    	$('.selector').on('click', function() {
+        	$('.list').addClass('hidden');
+        	$('.selector').removeClass('clicked');
+    	})
+
+
+    </script>
+    <script>
+    	var cbpAnimatedLogo = (function() {
+
+	var docElem = document.documentElement,
+		catamaran= document.querySelector( '.logor')
+		didScroll = false,
+		changeHeader2On = 20;
+
+	function init() {
+		window.addEventListener( 'scroll', function( event ) {
+			if( !didScroll ) {
+				didScroll = true;
+				setTimeout( scrollPage2, 550 );
+			}
+		}, false );
+	}
+
+	function scrollPage2() {
+		var sy = scrollY();
+		if ( sy >= changeHeader2On ) {
+			classie.add( catamaran, 'exist');
+
+		}
+		else {
+			classie.remove( catamaran, 'exist');
+		}
+		didScroll = false;
+	}
+
+	function scrollY() {
+		return window.pageYOffset || docElem.scrollTop;
+	}
+
+	init();
+
+})();
+
+    </script>
+    	<script type="text/javascript">
+		$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+	</script>
+	  <!-- Swiper JS -->
+ <script type="text/javascript">
+    	var header = $('#nav');
+	    	window.addEventListener( 'scroll', function( event ) {
+	    	if ($('#nav').hasClass('affix')) {
+	    		$('.title').addClass('padding')
+	    	}
+	    	else {
+	    		$('.title').removeClass('padding')
+	    	}
+	    })
+    </script>
+    <script type="text/javascript">
+	$(function() {
+		var radio = $('.radio_button')
+		var input = $('#other')
+
+		input.on('click', function() {
+			$('#other-input').removeAttr('disabled');
+		})
+		radio.on('click', function() {
+			$('#other-input').attr('disabled', 'disabled');
+			$('#other-input').val('');
+		})
+	})
+</script>
+<script type="text/javascript">
+  $('form').on('submit', function () {
+	var capchta = $('#capchta');
+	var valid = capchta.val() == 12;
+	if (!valid) {
+	  $('.captcha-message').removeClass('hidden');
+	  return false;
+	}
+	$('.captcha-message').addClass('hidden');
+	return true;
+  })
+
+</script>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+		<link href="https://fonts.googleapis.com/css?family=Lato:100|Work+Sans:100" rel="stylesheet">
+		{{ .Hugo.Generator }}
+		<title>{{ .Site.Title }}</title>
+
+		{{ "<!-- Favicon -->" | safeHTML }}
+		{{ partial "css.html" . }}
+	</head>
+	<body >
+		{{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services  .Site.Params.navigation.links.contact }}
+			{{ partial "nav.html" . }}
+		{{ end }}
+    	<div id="transcroller-body" class="aos-all">
+
+			<div class="heading-style" style="background-image: url(/images/networking.jpg);">
+				<div class="title_img" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+					<div class="col-sm-6 col-md-6 col-lg-6"></div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pad-no">
+						<div class="title_holder">
+							<div class="title_text">
+								<div class="title_box">
+									<p>Networking</p>
+									<hr class="hr">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="first_breaker">
+				<img src="/images/transition-white.png">
+			</div>
+			<div class="second_section">
+				<div class="col-lg-12 white_space">
+					<div class="col-lg-6 col-lg-offset-3 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 aos-item" >
+						<div class="col-lg-12" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500">
+							<div class="col-lg-12 conbox">
+								<p>Wide Area Networks are designed to connect multiple sites and enable secure data transfer between them, making them incredibly useful for Multi-Academy Trusts and larger schools. We specialise in creating bespoke WANs to accommodate for any school's requirements - get in touch with our team today at 0345 145 1234 to discuss your requirements with our expert team!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="/images/end-top-transition2-top.png">
+			</div>
+			<div class="second_section_middle"></div>
+			<div class="second_section_bottom">
+				<img src="/images/end-top-transition2.png">
+			</div>
+			<div>
+				<div class="screen-holder">
+					<div class="screen"></div>
+					<section class="board board_h_voice" style="background-image: url(/images/hosting_large.jpg);%">
+					<div class="col-lg-12" style="padding-top: 50px">
+						<div class="col-lg-6 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="zoom-in-left" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500">
+							<div class="conbox">
+								<h4 class="chalk head">Bespoke Networking Solutions</h4>
+								<p>Every organisation has different requirements for their WAN - we can provide practically any kind of networking solution, including the following and more:</p>
+								<p><b>•MPLS Networks</b>: Connect all network locations to one central Internet breakout for convenient site management and complete privacy, using practically any <a href="/connectivity">connectivity option</a>. </p>
+								<p><b>•VPLS Networks</b>: Much like MPLS networks, VPLS WANs centralise management, but operate exclusively via ethernet (usually leased line or EoFTTC connections).</p>
+								<p><b>•IPSec VPNs</b>: Ideal for smaller sites, IPSec uses a securely encrypted Internet-based network to share data between schools. </p>
+								<p>Whether you're interested in one of the above networking options or any of the other solutions we offer, you can be sure of excellent performance across all of our services! Get in touch with us today to find out more about how we can bring your school better service at a lower cost than other providers. </p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="zoom-in-right" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500">
+							<div class="conbox">
+								<h4 class="chalk head">Certified Secure Networking</h4>
+								<p>Data transfer over your network needs to be absolutely secure at all times. No matter what kind of WAN works best for you, we'll ensure that your network is completely private, absolutely secure, and always brings you a great level of performance. </p>
+								<p>Our networks meet a wide range of regulations, from Ofsted and Data Protection Act requirements to ISO 9001 &amp; 27001 certification for the secure transfer of payment data.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-lg-offset-3 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 chalk well" data-aos="zoom-in-left" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1500" >
+							<div class="conbox">
+								<h4 class="chalk head">Award-Winning-Support</h4>
+								<p>We're dedicated to providing our customers with industry-leading support on all levels. When you first become an Exa customer, we'll set you up with a personal account manager to provide 1:1 support with your services.</p>
+								<p>If you ever experience any issues with your services, our expert support team will help resolve those issues as soon as possible, with some of the fastest call answer times in the industry. </p>
+							</div>
+						</div>
+					</div>
+				</section>
+				</div>
+			</div>
+			<div class="third_breaker">
+				<img src="/images/end-top-transition3-top.png">
+			</div>
+
+				{{ partial "contact.html" . }}
+				{{ partial "footer.html" . }}
+
+
+			{{ partial "js.html" . }}
+
+			
+		</div>
+	</body>
+
+</html>

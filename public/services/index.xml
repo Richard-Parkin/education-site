@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Hugo Creative Theme</title>
+    <link>https://preview.exa.education/services/</link>
+    <description>Recent content in Services on Hugo Creative Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://preview.exa.education/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/additional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/additional/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} test  {{ partial &#34;nav.html&#34; . }}  Additional Services
+       While most of our customers are interested in a particular set of services, we&#39;re able to provide a comprehensive, high quality Internet solution for your school, no matter what you require. On this page, you&#39;ll find some information about our additional educational Internet services - get in touch with us today at 0345 145 1234 to find out more about any service we offer!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/connectivity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/connectivity/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} Speeding up your school with ultrafast Internet connectivity from Exa Education  {{ partial &#34;nav.html&#34; . }}  Connectivity
+       Advanced Internet Connectivity for Education Internet connections for schools are often strained, with video streaming, mobile devices/ tablets, online learning resources and general computer usage all taking up a huge, and ever-increasing, amount of bandwidth.
+It&#39;s now more important than ever for your school to have an Internet connection which fully accommodates for your students&#39; needs - that&#39;s where Exa Education step in.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/content-filtering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/content-filtering/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} SurfProtect Quantum - Discover Completely Customisable Content Filtering   .title_text { padding-left:17px; }  {{ partial &#34;nav.html&#34; . }}  SurfProtect Quantum
+       Modern-Day, School-Focused Content Filtering With students now using the Internet more than ever, it&#39;s vital for schools to be able to monitor Internet usage and protect students from harmful content. Content filtering is a major part of achieving this protection, letting schools decide what material is accessible through their network, giving students the ability to browse safely while fully blocking dangerous material in compliance with the Prevent Duty and similar legislation.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/domain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/domain/</guid>
+      <description>{{ with .Site.Params.name }}{{ end }} {{ with .Site.Params.description }}{{ end }} {{ .Hugo.Generator }} {{ .Site.Title }} {{ &#34;&#34; | safeHTML }} {{ partial &#34;css.html&#34; . }}  {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services .Site.Params.navigation.links.contact }} {{ partial &#34;nav.html&#34; . }} {{ end }}  Domain
+       Internet security is absolutely vital for schools. Along with our industry-leading SurfProtect Quantum content filtering, we offer a number of market-leading security services to keep your school as safe as possible.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/exavoice-voip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/exavoice-voip/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} test  {{ partial &#34;nav.html&#34; . }}  ExaVoice for Schools
+       Internet telephony, or VoIP (Voice over IP), is an effective way for schools to cut down on the cost of phone bills, using your Internet connection in place of a traditional phone system. Along with cost savings, VoIP brings in a new level of flexibility, introducing a range of effective new features.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/networking/</guid>
+      <description>{{ with .Site.Params.name }}{{ end }} {{ with .Site.Params.description }}{{ end }} {{ .Hugo.Generator }} {{ .Site.Title }} {{ &#34;&#34; | safeHTML }} {{ partial &#34;css.html&#34; . }}  {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services .Site.Params.navigation.links.contact }} {{ partial &#34;nav.html&#34; . }} {{ end }}  Networking
+       Wide Area Networks are designed to connect multiple sites and enable secure data transfer between them, making them incredibly useful for Multi-Academy Trusts and larger schools.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/security/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} Improving Online Security for Schools with Exa Education  {{ partial &#34;nav.html&#34; . }} Security
+      Advanced Digital Security for Schools and Academies In the modern day, it&#39;s fundamentally important for schools to have an effective approach to cybersecurity, keeping students, their data, and your school&#39;s network as safe as possible. To support this, we offer a number of options for digital security, letting schools build comprehensive security packages.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preview.exa.education/services/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://preview.exa.education/services/test/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} test  {{ partial &#34;nav2.html&#34; . }} test
+      test test
+test
+test
+       test test
+test
+test
+ test test
+test
+test
+ test test
+test
+test
+     {{ partial &#34;contact.html&#34; . }} {{ partial &#34;footer.html&#34; . }} {{ partial &#34;js.html&#34; . }}    </description>
+    </item>
+    
+  </channel>
+</rss>

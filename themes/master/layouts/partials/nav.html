@@ -1,0 +1,83 @@
+{{ $test := .Permalink }}
+<div class="test-header hidden-xs" style="background-color: #315390; height: 75px; color: #fff">
+  <div class="image">
+  <a href="/" style="float:left;margin-right: 0;"><div style="height:48px;width:140px"><img src="/images/exalogo.png"  alt="The Exa Networks logo - head back to the frontpage" style="z-index:9999;padding-top:5px;"></div></a>
+  </div>
+  <div class="data1 pull-right col-lg-3" style="padding-left: 0px; padding-right: 0px;">
+    <div class="col-lg-12 pull-right" style="text-align: center;color:rgba(255,255,255,0.7)">
+      <i class="fa fa-phone" data-fa-transform="flip-h" style="font-size: 40px;padding-right: 5px;"></i>
+      <span style="display: inline-block; vertical-align: top;text-align: left;">
+      <span style="font-size: 25px;">0345 145 1234</span>
+    </div>
+  </div>
+  <div class="data1 pull-right col-lg-1" style="width:160px;font-size: 16px;">
+    <div class="col-lg-12 pull-right">
+      <div class="selector" style="text-align: center;">
+        <span style="cursor: pointer;float:left">exa.education</span>
+        <span class="caret"></span>
+      </div>
+      <div class="list hidden" style="position: absolute; width: 100%; background-color: #315390;padding-top:5px;">
+        <table class="table url_list" style="margin-bottom: 0px;	background-color: #315390">
+          <tr style="cursor: pointer;" onclick="window.location='https://exa.net.uk'"><td>exa.net.uk</td></tr>
+          <tr style="cursor: pointer;" onclick="window.location='https://darklight.city'"><td>darklight.city</td></tr>
+          <tr style="cursor: pointer;" onclick="window.location='https://surfprotect.co.uk'"><td>surfprotect.co.uk</td></tr>
+          <tr style="cursor: pointer;" onclick="window.location='https://blog.exa.net.uk'"><td>blog.exa.net.uk</td></tr>
+          <tr style="cursor: pointer;" onclick="window.location='https://exa.solutions/'"><td>exa.solutions</td></tr>
+          <tr style="cursor: pointer;" onclick="window.location='https://exa.foundation'"><td>exa.foundation</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="nav" style="z-index: 988; ">
+<nav id="mainNav" class="navbar navbar-default" style="width: 100%;border-bottom:1px solid #315390">
+	<div class="container-fluid">
+		{{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			{{ with .Site.Params.navigation.brand }}
+				<a href="/" style="float:left"><div style="height:48px;width:140px"><img src="/images/exalogo1.png" class="logor" id="logo" alt="The Exa Networks logo - head back to the frontpage" style="z-index:9999;padding-top:15px;"/><img src="/images/exalogo.png" class="smallog" alt="The Exa Networks logo - head back to the frontpage" style="z-index:9999;padding-top:15px;width:145px;margin-left:15px;"/></div></a>
+			{{ end }}
+		</div>
+		{{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+          <a href="/services" class="dropdown-toggle hidden-sm hidden-md hidden-lg {{ if or (in .Permalink "/services/") (eq .URL "/services/") }}selected{{ end }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="cursor: pointer;" >Services <span class="caret"></span></a>
+          <a href="/services" class="dropdown-toggle hidden-xs {{ if or (in .Permalink "/services/") (eq .URL "/services/") }}selected{{ end }}" role="button" aria-haspopup="true" aria-expanded="true" style="cursor: pointer;" >Services <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+            <li><a class="headlink" {{ if or (in .Permalink "/services/") (eq .URL "/services/") }}class="selected"{{ end }} href="/services/">Internet Services</a></li>
+            <li><a href="/services/connectivity" {{ if or (in .Permalink "/connectivity/") (eq .URL "/connectivity/") }}class="selected"{{ end }}>Connectivity</a></li>
+						<li><a href="/services/exavoice-voip" {{ if or (in .Permalink "/exavoice-voip/") (eq .URL "/exavoice-voip/") }}class="selected"{{ end }}>ExaVoice</a></li>
+						<li><a href="/services/content-filtering" {{ if or (in .Permalink "/filtering/") (eq .URL "/filtering/") }}class="selected"{{ end }} style="border-top:1px solid white">Content Filtering</a></li>
+						<li><a href="/services/security" {{ if or (in .Permalink "/security/") (eq .URL "/security/") }}class="selected"{{ end }} style="border-top:1px solid white">Security (NetSupport/ Fortinet)</a></li>
+						<li><a href="/services/domain" {{ if or (in .Permalink "/domain/") (eq .URL "/domain/") }}class="selected"{{ end }} style="border-top:1px solid white">Domain Services</a></li>
+						<li><a href="/services/networking" {{ if or (in .Permalink "/networking/") (eq .URL "/networking/") }}class="selected"{{ end }} style="border-top:1px solid white">Networking</a></li>
+						<li><a href="/services/additional" {{ if or (in .Permalink "/additional/") (eq .URL "/additional/") }}class="selected"{{ end }} style="border-top:1px solid white">Additional Services</a></li>
+<!-- 						<li><a href="/services/checklist" {{ if or (in .Permalink "/checklist/") (eq .URL "/checklist/") }}class="selected"{{ end }} style="border-top:1px solid white">Checklist</a></li> -->
+					</ul>
+				</li>
+        <li>
+          <a {{ if or (in .Permalink "/exa-foundation/") (eq .URL "/exa-foundation/") }}class="selected"{{ end }} href="/exa-foundation/">exa.foundation</a>
+        </li>
+				<li>
+					<a {{ if or (in .Permalink "/news/") (eq .URL "/news/") }}class="selected"{{ end }} href="/news/">News</a>
+				</li>
+				<li>
+					<a {{ if or (in .Permalink "/testimonials/") (eq .URL "/support/") }}class="selected"{{ end }} href="/testimonials/">Testimonials</a>
+				</li>
+				<li>
+					<a {{ if or (in .Permalink "/about/") (eq .URL "/about/") }}class="selected"{{ end }} href="/about/">About / Contact</a>
+				</li>
+			</ul>
+		</div>
+		{{ "<!-- /.navbar-collapse -->" | safeHTML }}
+	</div>
+	{{ "<!-- /.container-fluid -->" | safeHTML }}
+</nav>
+</div>

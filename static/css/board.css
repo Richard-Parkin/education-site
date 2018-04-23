@@ -1,0 +1,59 @@
+.cork {
+	/*padding:0 50px 50px 50px; */
+	background-image: url(/images/cork.jpg);
+	padding-top: 30px;
+	min-height: 875px;
+	position: relative;
+	z-index: 1;
+	margin-top: -6%;
+}
+.cork_height {
+	margin-top: 75px;
+	margin-bottom:50px;
+}
+.board {
+	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin-top: -6%;
+}
+
+@media screen and (min-width: 360px) {
+	.board {
+		padding: 35px 20px 50px 20px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.board {
+		padding: 150px 50px 150px 50px;
+	}
+	.board_h_voice {
+		padding: 80px 50px 150px 50px!important;
+	}
+}
+.cork::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cork img {
+	width: 100%;
+    bottom: 0;
+    left: 0;
+
+    /*position: absolute;*/
+}
+.screen {
+	height:100%;
+	width:100%;
+	background-size: cover;
+	position: absolute;
+    opacity: 0.55;
+    overflow: hidden;
+}
+.screen-holder {
+	z-index: -1;
+}
+.board_h_voice {   background-color: #68869c;  background-blend-mode: soft-light;}
